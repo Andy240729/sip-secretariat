@@ -2,25 +2,25 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Current state
+## 現在の状態
 
-This repository is a fresh scaffold. As of this writing it contains only `README.md`
-(a single title line) and no source code, dependency manifests, build configuration,
-or tests. There is a single commit (`Initial commit`) on `main`.
+このリポジトリは作成されたばかりの雛形（スキャフォールド）です。現時点では `README.md`
+（タイトル行が1行あるだけ）のみが存在し、ソースコード・依存関係マニフェスト・ビルド設定・
+テストはありません。コミットは `main` 上の `Initial commit` の1つだけです。
 
-There is therefore no build, lint, test, or run tooling to document yet. When the
-first real code lands, update this file with:
+そのため、まだドキュメント化すべきビルド・lint・テスト・実行用のツールは存在しません。
+最初の実コードが入った時点で、このファイルに以下を追記してください。
 
-- The package manager and language/runtime, and how to install dependencies.
-- How to build, lint, run, and test — including how to run a single test.
-- The high-level architecture (the "big picture" that spans multiple files).
+- パッケージマネージャと言語/ランタイム、および依存関係のインストール方法。
+- ビルド・lint・実行・テストの方法（単一テストの実行方法を含む）。
+- 高レベルのアーキテクチャ（複数ファイルにまたがる「全体像」）。
 
-Do not infer these from the repo name or environment integrations alone; document
-them only once they exist in the codebase.
+リポジトリ名や接続されている外部連携だけから推測しないでください。コードベースに実際に
+存在するようになってから記載してください。
 
-## Git workflow
+## Git ワークフロー
 
-- Do all work on the feature branch you were assigned for the task (do not commit
-  directly to `main`); create the branch locally if it does not exist.
-- Push with `git push -u origin <branch-name>`.
-- Do not open a pull request unless explicitly asked.
+- 作業はタスクごとに割り当てられたフィーチャーブランチ上で行ってください（`main` に直接
+  コミットしない）。ブランチがローカルに存在しない場合は作成してください。
+- プッシュは `git push -u origin <branch-name>` で行ってください。
+- 明示的に依頼された場合を除き、プルリクエストは作成しないでください。
