@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>実績 WORKS - Stand-in Partners</title>
+<style>
+  :root{
+    --navy:#2b3a8c;
+    --ink:#1f2433;
+    --sub:#5b6172;
+    --line:#e7eaf3;
+    --chip-bg:#eef1fb;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",YuGothic,Meiryo,sans-serif;
+    color:var(--ink);
+    background:#fff;
+  }
+
+  /* ===== 実績セクション（ここからコピペ可） ===== */
+  .works{max-width:1040px;margin:0 auto;padding:72px 24px;text-align:center}
+  .works__label{
+    font-size:clamp(40px,8vw,56px);letter-spacing:.2em;
+    color:#eef1f8;font-weight:800;margin:0;line-height:1;
+  }
+  .works__title{
+    font-size:26px;letter-spacing:.32em;color:var(--navy);
+    font-weight:700;margin:-30px 0 8px;
+  }
+  .works__lead{font-size:14px;color:var(--sub);margin:0 0 44px}
+
+  .works__grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  }
+  .work-card{
+    position:relative;background:#fff;border:1px solid var(--line);
+    border-radius:16px;padding:30px 24px;text-align:left;
+    box-shadow:0 6px 20px rgba(43,58,140,.06);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .work-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(43,58,140,.14);
+  }
+  .work-card__no{
+    position:absolute;top:18px;right:22px;
+    font-size:13px;font-weight:800;color:#cfd6ee;letter-spacing:.05em;
+  }
+  .work-tag{
+    display:inline-block;font-size:12px;font-weight:700;color:var(--navy);
+    background:var(--chip-bg);border-radius:999px;padding:6px 13px;margin-bottom:16px;
+  }
+  .work-card__client{
+    font-size:19px;color:var(--ink);font-weight:700;margin:0 0 12px;
+    padding-bottom:12px;border-bottom:2px solid #f0f2f8;
+  }
+  .work-card__desc{font-size:14px;line-height:1.8;color:var(--sub);margin:0}
+  .works__note{font-size:12px;color:#9aa0ad;margin-top:32px}
+
+  @media(max-width:768px){
+    .works__grid{grid-template-columns:1fr}
+    .works__title{margin-top:-22px}
+  }
+  /* ===== 実績セクション（ここまで） ===== */
+</style>
+</head>
+<body>
+
+  <!-- ▼ ここから下を、HPの「実績」部分にそのまま貼り付け -->
+  <section class="works">
+    <p class="works__label">WORKS</p>
+    <h2 class="works__title">実&nbsp;績</h2>
+    <p class="works__lead">守秘義務に配慮し、お取引先は業態・規模で記載しております。</p>
+
+    <div class="works__grid">
+      <article class="work-card">
+        <span class="work-card__no">01</span>
+        <span class="work-tag">不動産 × WEBマーケ</span>
+        <h3 class="work-card__client">大手分譲ビルダー</h3>
+        <p class="work-card__desc">不動産WEBマーケティング新商品の<br>事業設計・PM支援</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__no">02</span>
+        <span class="work-tag">データ活用 × 営業</span>
+        <h3 class="work-card__client">大手不動産仲介会社</h3>
+        <p class="work-card__desc">データ活用によるBtoB営業・<br>集客戦略の立案</p>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__no">03</span>
+        <span class="work-tag">新規事業 × 上流設計</span>
+        <h3 class="work-card__client">大手デベロッパー</h3>
+        <p class="work-card__desc">新規事業の上流コンセプト設計／<br>価格設計の伴走</p>
+      </article>
+    </div>
+
+    <p class="works__note">※守秘義務により、お取引先名は非公開としております。</p>
+  </section>
+  <!-- ▲ ここまで -->
+
+</body>
+</html>
