@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About / 代表メッセージ - Stand-in Partners</title>
+<style>
+  /* ===== ABOUT/代表メッセージ セクション（STUDIO埋め込み用） ===== */
+  .about{max-width:1040px;margin:0 auto;padding:72px 24px;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",YuGothic,Meiryo,sans-serif;text-align:center}
+  .about__label{font-size:clamp(40px,8vw,56px);letter-spacing:.2em;color:#eef1f8;font-weight:800;margin:0;line-height:1}
+  .about__title{font-size:26px;letter-spacing:.32em;color:#2b3a8c;font-weight:700;margin:-30px 0 44px}
+
+  /* 代表プロフィール */
+  .ceo{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center;text-align:left;
+    background:#fff;border:1px solid #e7eaf3;border-radius:18px;padding:40px;
+    box-shadow:0 6px 20px rgba(43,58,140,.06)}
+  .ceo__photo{width:180px;height:180px;border-radius:50%;object-fit:cover;
+    background:#eef1fb;display:flex;align-items:center;justify-content:center;
+    color:#aab3da;font-size:13px;justify-self:center}
+  .ceo__role{font-size:12px;font-weight:700;color:#2b3a8c;letter-spacing:.1em;margin:0 0 4px}
+  .ceo__name{font-size:22px;font-weight:700;color:#1f2433;margin:0 0 18px}
+  .ceo__name small{font-size:13px;color:#9aa0ad;font-weight:500;margin-left:10px}
+  .ceo__msg{font-size:15px;line-height:1.95;color:#5b6172;margin:0}
+
+  /* メンバーの強み */
+  .team{margin-top:24px;background:#2b3a8c;border-radius:18px;padding:36px 40px;
+    color:#fff;text-align:left;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .team__badge{font-size:12px;font-weight:700;background:rgba(255,255,255,.15);
+    border-radius:999px;padding:7px 16px;white-space:nowrap}
+  .team__txt{font-size:15px;line-height:1.9;margin:0;flex:1;min-width:260px}
+  .team__txt b{color:#fff;font-weight:700;border-bottom:2px solid rgba(255,255,255,.5);padding-bottom:1px}
+
+  @media(max-width:768px){
+    .about__title{margin-top:-22px}
+    .ceo{grid-template-columns:1fr;gap:24px;padding:28px;text-align:center}
+    .ceo__msg{text-align:left}
+    .team{padding:28px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ▼ ここから貼り付け -->
+<section class="about">
+  <p class="about__label">ABOUT</p>
+  <h2 class="about__title">代表メッセージ</h2>
+
+  <!-- 代表プロフィール -->
+  <div class="ceo">
+    <!-- 写真：src を差し替え。無い間はこのプレースホルダーが出ます -->
+    <img class="ceo__photo" src="" alt="代表" onerror="this.outerHTML='&lt;div class=&quot;ceo__photo&quot;&gt;PHOTO&lt;/div&gt;'">
+    <div>
+      <p class="ceo__role">代表 / CEO</p>
+      <p class="ceo__name">【氏名を入力】<small>Stand-in Partners</small></p>
+      <p class="ceo__msg">
+        不動産・新規事業・WEBマーケティングの最前線で実務を重ねるなかで、
+        多くの企業が「構想はある。けれど、あと一歩を決め切れない」という壁に
+        直面している場面を見てきました。<br>
+        私たち Stand-in Partners は、その“決め切る”プロセスに、
+        当事者として入り込み、共に走り抜くために生まれました。
+        外部の客観的な視点と、現場で再現できる実装力の両輪で、
+        事業の勝ち筋づくりを伴走します。
+      </p>
+    </div>
+  </div>
+
+  <!-- メンバーの強み -->
+  <div class="team">
+    <span class="team__badge">MEMBER</span>
+    <p class="team__txt">
+      チームには、<b>リクルートの住まい領域（不動産メディア）出身の事業企画・マーケティング人材</b>が在籍。
+      不動産 × データ × 集客の事業づくりを、構想から商品設計・実装まで一気通貫で支援します。
+    </p>
+  </div>
+</section>
+<!-- ▲ ここまで -->
+
+</body>
+</html>
